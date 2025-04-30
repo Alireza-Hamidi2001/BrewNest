@@ -72,21 +72,21 @@
             background-image: linear-gradient(to right bottom,
                     $color-yellow-light,
                     $color-yellow-dark ),
-                url(../../images/espresso.jpg);
+                url(../images/espresso.jpg);
         }
 
         &--2 {
             background-image: linear-gradient(to right bottom,
                     $color-green-light,
                     $color-green-dark ),
-                url(../../images/cappuccino.jpg);
+                url(../images/cappuccino.jpg);
         }
 
         &--3 {
             background-image: linear-gradient(to right bottom,
                     $color-red-light,
                     $color-red-dark ),
-                url(../../images/latte-popup-2.png);
+                url(../images/latte-popup-2.png);
         }
     }
 
