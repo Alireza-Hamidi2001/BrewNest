@@ -36,38 +36,38 @@ body {
 
 @font-face {
   font-family: "Monoton";
-  src: url("/assets/fonts/Monoton/Monoton-Regular.eot") format("eot");
-  src: url("/assets/fonts/Monoton/Monoton-Regular.ttf") format("ttf");
-  src: url("/assets/fonts/Monoton/Monoton-Regular.woff") format("woff");
-  src: url("/assets/fonts/Monoton/Monoton-Regular.woff2") format("woff2");
+  src: url("../.../../assets/fonts/Monoton/Monoton-Regular.eot") format("eot");
+  src: url("../.../../assets/fonts/Monoton/Monoton-Regular.ttf") format("ttf");
+  src: url("../.../../assets/fonts/Monoton/Monoton-Regular.woff") format("woff");
+  src: url("../.../../assets/fonts/Monoton/Monoton-Regular.woff2") format("woff2");
   font-style: normal; }
 
 @font-face {
   font-family: "Caveat";
-  src: url("/assets/fonts/Caveat/Caveat-Regular.eot") format("eot");
-  src: url("/assets/fonts/Caveat/Caveat-Regular.ttf") format("ttf");
-  src: url("/assets/fonts/Caveat/Caveat-Regular.woff") format("woff");
+  src: url("../../assets/fonts/Caveat/Caveat-Regular.eot") format("eot");
+  src: url("../../assets/fonts/Caveat/Caveat-Regular.ttf") format("ttf");
+  src: url("../../assets/fonts/Caveat/Caveat-Regular.woff") format("woff");
   font-style: normal; }
 
 @font-face {
   font-family: "ComicNeue";
-  src: url("/assets/fonts/ComicNeue/ComicNeue-Regular.eot") format("eot");
-  src: url("/assets/fonts/ComicNeue/ComicNeue-Regular.ttf") format("ttf");
-  src: url("/assets/fonts/ComicNeue/ComicNeue-Regular.woff2") format("woff2");
+  src: url("../../assets/fonts/ComicNeue/ComicNeue-Regular.eot") format("eot");
+  src: url("../../assets/fonts/ComicNeue/ComicNeue-Regular.ttf") format("ttf");
+  src: url("../../assets/fonts/ComicNeue/ComicNeue-Regular.woff2") format("woff2");
   font-style: normal; }
 
 @font-face {
   font-family: "open-sans";
-  src: url("/assets/fonts/open-sans/OpenSans-Regular.eot") format("eot");
-  src: url("/assets/fonts/open-sans/OpenSans-Regular.ttf") format("ttf");
-  src: url("/assets/fonts/open-sans/OpenSans-Regular.woff") format("woff");
+  src: url("../../assets/fonts/open-sans/OpenSans-Regular.eot") format("eot");
+  src: url("../../assets/fonts/open-sans/OpenSans-Regular.ttf") format("ttf");
+  src: url("../../assets/fonts/open-sans/OpenSans-Regular.woff") format("woff");
   font-style: normal; }
 
 @font-face {
   font-family: "KottaOne";
-  src: url("/assets/fonts/KottaOne/KottaOne-Regular.eot") format("eot");
-  src: url("/assets/fonts/KottaOne/KottaOne-Regular.ttf") format("ttf");
-  src: url("/assets/fonts/KottaOne/KottaOne-Regular.woff2") format("woff2");
+  src: url("../../assets/fonts/KottaOne/KottaOne-Regular.eot") format("eot");
+  src: url("../../assets/fonts/KottaOne/KottaOne-Regular.ttf") format("ttf");
+  src: url("../../assets/fonts/KottaOne/KottaOne-Regular.woff2") format("woff2");
   font-style: normal; }
 
 .heading-primary {
@@ -834,10 +834,10 @@ body {
   height: 7rem;
   width: 7rem;
   position: fixed;
-  top: 6rem;
-  right: 6rem;
+  top: 8rem;
+  right: 8rem;
   border-radius: 50%;
-  box-shadow: 0 1rem 2rem #000;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   text-align: center;
   z-index: 2000; }
   @media only screen and (max-width: 56.25em) {
@@ -856,8 +856,8 @@ body {
   width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
+  top: 8.5rem;
+  right: 8.5rem;
   background-image: linear-gradient(to right, #81b7c9, #002a44);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.62, -0.37, 0.67, 0.98); }
