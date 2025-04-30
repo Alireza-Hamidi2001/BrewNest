@@ -1,0 +1,93 @@
+.footer {
+    color: $color-white;
+    background-color: $color-black;
+    padding: 10rem;
+    font-size: 1.5rem;
+
+    @include respond(phone) {
+        padding: 5rem;
+    }
+
+    &__logo-box {
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+
+    &__logo {
+        width: 40rem !important;
+        color: #dc143c;
+
+        @include respond(phone) {
+            width: 25rem !important;
+        }
+    }
+
+    &__navigation {
+        border-top: 1px solid $color-white;
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    &__list {
+        list-style: none;
+
+        &:hover .footer__item:not(:hover) {
+            transform: scale(0.9);
+            filter: brightness(0.3);
+        }
+    }
+
+    &__item {
+        display: inline-block;
+        transition: all 0.1s;
+        padding: 0.5rem 1.2rem;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            // margin-right: 1.5rem;
+        }
+
+        &:hover {
+            transform: scale(1.2) translateY(-0.2rem);
+            box-shadow: 0 0.2rem 0.4rem $color-white;
+        }
+    }
+
+    &__link {
+        color: $color-white !important;
+        text-decoration: none;
+
+        &--copyright {
+
+            &-1 {
+                text-decoration: none;
+                color: $color-grey;
+                letter-spacing: 2px;
+                font-size: 1.9rem;
+                font-family: "Caveat";
+                transition: all 0.1s;
+                padding: 0 0 0 1rem;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            &-2 {
+                font-family: "open-sans", sans-serif;
+                text-decoration: none;
+                color: $color-grey;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    &__copyright {
+        font-family: "open-sans";
+        border-top: 1px solid $color-white;
+        padding-top: 2rem;
+        text-align: justify;
+        font-size: 1.3rem !important;
+        color: $color-grey-dark-2 !important;
+    }
+}

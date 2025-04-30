@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "Monoton";
+    src: url("/assets/fonts/Monoton/Monoton-Regular.eot") format("eot");
+    src: url("/assets/fonts/Monoton/Monoton-Regular.ttf") format("ttf");
+    src: url("/assets/fonts/Monoton/Monoton-Regular.woff") format("woff");
+    src: url("/assets/fonts/Monoton/Monoton-Regular.woff2") format("woff2");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: url("/assets/fonts/Caveat/Caveat-Regular.eot") format("eot");
+    src: url("/assets/fonts/Caveat/Caveat-Regular.ttf") format("ttf");
+    src: url("/assets/fonts/Caveat/Caveat-Regular.woff") format("woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ComicNeue";
+    src: url("/assets/fonts/ComicNeue/ComicNeue-Regular.eot") format("eot");
+    src: url("/assets/fonts/ComicNeue/ComicNeue-Regular.ttf") format("ttf");
+    src: url("/assets/fonts/ComicNeue/ComicNeue-Regular.woff2") format("woff2");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "open-sans";
+    src: url("/assets/fonts/open-sans/OpenSans-Regular.eot") format("eot");
+    src: url("/assets/fonts/open-sans/OpenSans-Regular.ttf") format("ttf");
+    src: url("/assets/fonts/open-sans/OpenSans-Regular.woff") format("woff");
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "KottaOne";
+    src: url("/assets/fonts/KottaOne/KottaOne-Regular.eot") format("eot");
+    src: url("/assets/fonts/KottaOne/KottaOne-Regular.ttf") format("ttf");
+    src: url("/assets/fonts/KottaOne/KottaOne-Regular.woff2") format("woff2");
+    font-style: normal;
+}
+
+.heading {
+    &-primary {
+        color: $color-white;
+        margin-bottom: 5rem;
+        text-transform: uppercase;
+
+        &--main {
+            font-family: "Monoton";
+            font-size: 6rem;
+            letter-spacing: 1.5rem;
+            text-shadow: 0 1rem 1.2rem black;
+            animation: moveInLeft 1.8s;
+        }
+
+        &--sub {
+            letter-spacing: 1.2rem;
+            display: block;
+            font-size: 1.5rem;
+            animation: moveInRight 1.8s ease-out;
+        }
+    }
+
+
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-family: "ComicNeue", sans-serif;
+    letter-spacing: 0.5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right,
+            $color-primary-light-2, $color-primary-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.3s;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+        padding: 0 3rem;
+    }
+
+    &:hover {
+        transform: skewX(6deg) skewY(2deg) scale(1.05);
+        text-shadow: 0rem 0.2rem 0.8rem rgba($color-black, 0.4);
+    }
+}
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-family: "ComicNeue";
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    word-spacing: 0.2rem;
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: "open-sans", sans-serif;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+::selection {
+    background-color: $color-primary-dark;
+    color: $color-grey;
+}
