@@ -10,7 +10,7 @@
     background-image: linear-gradient(to right,
             rgba($color-primary-dark , 0.7),
             rgba($color-primary-light , 0.5)),
-        url(/images/coffee-6.png);
+        url(../../images/coffee-6.png);
     background-size: cover;
     background-position: top;
     transform: skewY(-6deg);
@@ -51,7 +51,7 @@
             rgba($color-white , 0.75) 0%,
             rgba($color-white , 0.75) 50%,
             transparent 50%),
-        url(/images/coffee-8.png);
+        url(../../images/coffee-8.png);
     background-size: cover;
     background-position: top;
     border-radius: 5px;
@@ -61,7 +61,7 @@
                 rgba($color-white , 0.75) 0%,
                 rgba($color-white , 0.75) 65%,
                 transparent 65%),
-            url(/images/coffee-8.png);
+            url(../../images/coffee-8.png);
     }
 
     @include respond(tab-port) {
@@ -69,7 +69,7 @@
                 rgba($color-white , 0.75) 0%,
                 rgba($color-white , 0.75) 100%,
                 transparent 100%),
-            url(/images/coffee-8.png);
+            url(../../images/coffee-8.png);
     }
 
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.6);
